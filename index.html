@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>森林風計時碼表</title>
+    <!-- 引入 OneCompiler 預設的 CSS 檔 -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="stopwatch-container">
+    <div class="display-section">
+        <div class="decor leaf1">🍃</div>
+        <div class="decor leaf2">🍃</div>
+        <div class="decor mushroom1">🍄</div>
+        <div class="decor mushroom2">🍄</div>
+        
+        <div class="dial">
+            <div class="label label-60">60</div>
+            <div class="label label-15">15</div>
+            <div class="label label-30">30</div>
+            <div class="label label-45">45</div>
+            
+            <div class="hand" id="dialHand"></div>
+            <div class="pointer-center"></div>
+            
+            <div class="dial-digital" id="dialDigital">00:00.00</div>
+        </div>
+    </div>
+
+    <div class="info-section">
+        <div class="info-box">
+            <div class="info-title">當前時間</div>
+            <div class="info-value" id="infoCurrent">00:00.00</div>
+        </div>
+        <div class="info-box">
+            <div class="info-title">計圈總數</div>
+            <div class="info-value">0</div>
+        </div>
+        <div class="info-box">
+            <div class="info-title">最新單圈</div>
+            <div class="info-value">--</div>
+        </div>
+    </div>
+
+    <div class="control-section">
+        <button class="btn btn-reset" id="resetBtn" disabled>重設</button>
+        <button class="btn btn-start" id="startBtn">▶ 開始</button>
+    </div>
+</div>
+
+<!-- 引入 OneCompiler 預設的 JS 檔 -->
+<script src="script.js"></script>
+</body>
+</html>
